@@ -7,6 +7,8 @@ jobs:
     steps:
       - name: Checking out repo
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}  # Add this line
       - name: Setting up Python
         uses: actions/setup-python@v4
         with:
