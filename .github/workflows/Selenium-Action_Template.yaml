@@ -22,7 +22,7 @@ jobs:
       - name: Installing all necessary packages
         run: |
           pip install chromedriver-autoinstaller selenium pyvirtualdisplay
-          pip install linkedin-jobs-scraper
+          pip uninstall -y linkedin-jobs-scraper
       - name: Install xvfb
         run: sudo apt-get install xvfb
 
