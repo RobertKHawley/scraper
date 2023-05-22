@@ -32,6 +32,7 @@ for option in options:
 
     
 driver = webdriver.Chrome(options = chrome_options)
+driver.set_page_load_timeout(30)  # Set the timeout value here
 
 driver.get('http://github.com')
 print(driver.title)
